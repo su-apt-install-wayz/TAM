@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Outfit', sans-serif;
+    font-style: normal;
+    color: var(--color-noir);
+}
+
+:root {
+    --color-bleu: #4361EE;
+    --color-bleu-50: #4362ee50;
+
+    --color-rouge: #ff0000;
+    --color-rouge-50: #ff000050;
+
+    --color-vert: #008000;
+    --color-vert-50: #00800050;
+
+    --color-orange: #fd631c;
+    --color-orange-50: #fd631c50;
+    
+    --color-noir: #212529;
+}
+
+.main {
+    margin: 88px auto 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: calc(100vh - 470px);
+}
+
+.genetif {
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1600px;
+    padding: 1rem;
+}
+
+.genetif h1 {
+    margin: 0 auto;
+    font-size: max(5vw, 35px);
+}
+
+.genetif .type {
+    margin: 0 auto;
+    color: var(--color-bleu);
+}
+
+.genetif span {
+    font-weight: 500;
+    color: var(--color-bleu);
+}
+
+.gen_div {
+    margin: 30px auto;
+    width: 100%;
+    max-width: 1800px;
+}
+
+.genetif h2 {
+    font-size: max(3vw, 25px);
+}
+
+.genetif p {
+    font-size: max(1.2vw, 15px);
+    margin: 10px 0;
+}
+
+.genetif ul {
+    padding: 3%;
+}
+
+.genetif ul li {
+    margin: 5px 0;
+    list-style-type: decimal;
+}
+
+button {
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: var(--color-bleu-50);
+    color: var(--color-noir);
+    border: 1px solid var(--color-bleu);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.message {
+    display: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    width: max-content;
+}
+
+.message.active {
+    display: block;
+}
+
+.message.erreur {
+    border: 1px solid var(--color-rouge);
+    color: var(--color-rouge);
+    background-color: var(--color-rouge-50);
+}
+
+.message.almost-valid {
+    border: 1px solid var(--color-orange);
+    color: var(--color-orange);
+    background-color: var(--color-orange-50);
+}
+
+.message.valid {
+    border: 1px solid var(--color-vert);
+    color: var(--color-vert);
+    background-color: var(--color-vert-50);
+}

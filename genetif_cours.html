@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/earth-fill.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== JQuery ===============-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/genetif.css">
+
+    <title>Le génitif</title>
+</head>
+<body>
+    <!--=============== IMPORTATION DE LA NAVBAR ===============-->
+    <header id="navbarImport" class="header"></header>
+    <script>$(function() {$('#navbarImport').load("views/navbar.html");});</script>
+
+    <section class="main">
+        <div class="genetif">
+            <h1>Le génitif</h1>
+            <p class="type">Cours</p>
+
+            <div class="gen_div">
+                <h2>Le génitif au singulier</h2><br>
+                <p>Pour former le génitif, on met un « s » précédé d'une apostrophe pour montrer l'appartenance, le génitif se forme de la façon suivante :</p>
+                <p style="text-decoration: underline;">Sujet + génitif + objet</p><br>
+                <p>Exemples :</p>
+                <p>- John's car : la voiture de John</p>
+                <p>- My mother's house : la maison de ma mère</p>
+            </div>
+
+            <div class="gen_div">
+                <h2>Le génitif au pluriel</h2><br>
+                <p>Lorsque le sujet est déjà au pluriel, on met une apostrophe au sujet, sans ajouter de « s ».</p>
+
+                <p>- My parents' room : la chambre de mes parents</p>
+                <p>- My sisters' desk : le bureau de mes soeurs</p><br>
+
+                <p>Attention aux pluriels irréguliers qui ne terminent pas par un « s ». Dans ce cas, c'est la forme habituelle.</p>
+                <p>- The children's toys : les jouets des enfants</p>
+                <p>- The women's walk : la marche des femmes</p><br>
+            </div>
+
+            <div class="gen_div">
+                <h2>Le génitif avec les noms propres</h2><br>
+                <p>On utilise la forme habituelle.</p>
+
+                <p>- Mary's bike : le vélo de Mary</p>
+                <p>- Alice's dream : le rêve d'Alice</p><br>
+
+                <p>Si le nom propre termine par un « s » le choix est possible : on peut soit accoler une simple apostrope, soit une apostrophe suivie d'un « s ».</p>
+                <p>- Miles' guitare ou  Miles's guitare : la guitare de Miles</p>
+                <p>- Jones' pen  ou Jones's pen : le stylo de Jones</p><br>
+            </div>
+
+            <div class="gen_div">
+                <h2>Autres utilisations du génitif</h2><br>
+                <p>Il peut exprimer un repère dans le temps ou l'espace : </p>
+                <p>- Yesterday's newspaper : le journal d'hier</p>
+                <p>- Paris's museums : les musées de Paris</p><br>
+
+                <p>Il peut tout d'abord exprimer une durée : </p>
+            
+                <p>- A month's holiday : un mois de vacances</p><br>
+
+                <p>Enfin, le génitif peur faire référence à un lieu précis</p>
+                <p>- At the baker's : chez le boulanger</p>
+                <p>- At Ali's : chez Ali</p>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== IMPORTATION DU FOOTER===============-->
+    <footer id="FooterImport"></footer>
+    <script>$(function() {$('#FooterImport').load("views/footer.html");});</script>
+
+</body>
+</html>

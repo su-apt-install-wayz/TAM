@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/earth-fill.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== JQuery ===============-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <title>TAM Anglais</title>
+</head>
+<body>
+    <!--=============== IMPORTATION DE LA NAVBAR ===============-->
+    <header id="navbarImport" class="header"></header>
+    <script>$(function() {$('#navbarImport').load("views/navbar.html");});</script>
+
+    <section class="main">
+        <div class="accueil">
+            <div class="left">
+                <h1>TAM Anglais</h1>
+                <h2>Cours et Exercices</h2>
+                <p>🇬🇧</p>
+            </div>
+            <div class="right">
+                <img src="./assets/droite.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--=============== IMPORTATION DU FOOTER===============-->
+    <footer id="FooterImport"></footer>
+    <script>$(function() {$('#FooterImport').load("views/footer.html");});</script>
+</body>
+</html>

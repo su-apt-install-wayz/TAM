@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/earth-fill.png" type="image/x-icon">
+
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!--=============== JQuery ===============-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/genetif.css">
+
+    <title>Le génitif</title>
+</head>
+<body>
+    <!--=============== IMPORTATION DE LA NAVBAR ===============-->
+    <header id="navbarImport" class="header"></header>
+    <script>$(function() {$('#navbarImport').load("views/navbar.html");});</script>
+
+    <section class="main">
+        <div class="genetif">
+            <h1>Le génitif</h1>
+            <p class="type">Exercices</p>
+
+            <div id="gen_div" class="gen_div">
+                <h2>Exercice 1</h2>
+                <p>Reliez les mots entre parenthèses grâce au génitif avec l'apostrophe + s (attention à l'ordre et aux déterminants !) :</p><br>
+                <p id="message_exo1" class="message"></p>
+                
+                <ul>
+                    <li><select id="exo1"><option value=0 hidden>Choisir</option><option value=1>My sisters' novel</option><option value=2>My sister's novel</option></select> (<span>novel / sister</span>) has been published. = Le roman de ma soeur a été publié.</li>
+                    <li>Take care of <select id="exo2"><option value=0 hidden>Choisir</option><option value=1>your pet's health</option><option value=2>your pet' health</option></select> (<span>health / pet</span>). = Prenez soin de la santé de votre animal.</li>
+                    <li>This old farm is now <select id="exo3"><option value=0 hidden>Choisir</option><option value=1>the communitys garden</option><option value=2>the community's garden</option></select> (<span>garden / community</span>). = Cette vieille ferme est maintenant le jardin de la communauté.</li>
+                    <li><select id="exo4"><option value=0 hidden>Choisir</option><option value=1>The sailor's wife</option><option value=2>The wife's sailor</option></select> (<span>wife / sailor</span>) was waiting for his return. = La femme du marin attendait son retour.</li>
+                    <li><select id="exo5"><option value=0 hidden>Choisir</option><option value=1>The company's employers</option><option value=2>The company's employees</option></select> (<span>employees / company</span>) are on strike. = Les employés de la société sont en grève.</li>
+
+                    <button onclick="valideRep_Exo1()">Valider mes réponses</button>
+                </ul>
+            </div>
+            <div class="gen_div">
+                <h2>Exercice 2</h2>
+                <p>Reliez les mots entre parenthèses grâce au génitif avec l'apostrophe + s ou avec seulement l'apostrophe (attention à l'ordre et aux déterminants !) :</p><br>
+                <p id="message_exo2" class="message"></p>
+                
+                <ul>
+                    <li><select id="exo6"><option value=0 hidden>Choisir</option><option value=1>The tree's leaves</option><option value=2>The trees' leaves</option></select> (<span>leaves / trees</span>) haven't fallen yet. = Les feuilles des arbres ne sont pas encore tombées.</li>
+                    <li><select id="exo7"><option value=0 hidden>Choisir</option><option value=1>Jack's and Becky's mother</option><option value=2>Jack and Becky's mother</option></select> (<span>mother / Jack / Becky</span>) is a nurse. = La mère de Jack et Becky est infirmière.</li>
+                    <li>She heard <select id="exo8"><option value=0 hidden>Choisir</option><option value=1>children's voice</option><option value=2>childrens' voices</option></select> (<span>voices / children</span>). = Elle a entendu des voic d'enfants.</li>
+                    <li><select id="exo9"><option value=0 hidden>Choisir</option><option value=1>My driver's license</option><option value=2>My drivers' license</option></select> (<span>license / driver</span>) will soon expire. = Mon permis de conduire va bientôt expirer.</li>
+                    <li>What would <select id="exo10"><option value=0 hidden>Choisir</option><option value=1>people's reactions</option><option value=2>peoples' reactions</option></select> (<span>people / reactions</span>)be ? = Quelles seraient la réaction des gens ?</li>
+
+                    <button onclick="valideRep_Exo2()">Valider mes réponses</button>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== IMPORTATION DU FOOTER===============-->
+    <footer id="FooterImport"></footer>
+    <script>$(function() {$('#FooterImport').load("views/footer.html");});</script>
+
+    <script src="javascript/genitif.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>

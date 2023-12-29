@@ -1,0 +1,116 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+    --background-code-color: #1F1F1F;
+
+    --first-color: #4361ee;
+
+    --text-color: #656e81;
+    --first-color-lighten: #f2f6fd;
+}
+
+
+
+
+
+footer {
+    min-height: 420px;
+    width: 100%;
+    background-color: var(--background-code-color);
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+
+footer a {
+    transition: color .1s ease;
+    color: var(--text-color);
+}
+
+footer a:hover {
+    transition: color .3s ease;
+    color: var(--first-color);
+}
+
+
+
+
+
+
+
+.footer-item {
+    margin: auto;
+    width: 90%;
+}
+
+.footer-item p {
+    color: var(--text-color);
+}
+
+.haut {
+    display: flex;
+    justify-content: space-between;
+}
+
+.haut .gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.haut .gauche h2 {
+    color: var(--first-color-lighten);
+    font-size: 2rem;
+}
+
+.haut .gauche a {
+    font-size: 2rem;
+    width: max-content;
+    cursor: pointer;
+    transition: color .1s ease;
+}
+
+.haut .gauche a:hover {
+    color: var(--first-color);
+    transition: color .3s ease;
+}
+
+
+.haut .droite .list-item.titre {
+    color: var(--first-color-lighten);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+hr {
+    margin: 80px 0 40px 0;
+    color: var(--text-color);
+}
+
+
+
+
+
+
+.bas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bas .gauche {
+    color: var(--text-color);
+}
+
+.bas .droite .list {
+    display: flex;
+    gap: 40px;
+}
